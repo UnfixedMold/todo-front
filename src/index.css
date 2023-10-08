@@ -1,0 +1,30 @@
+.app {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-list input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.todo-list button {
+  padding: 10px 20px;
+}
+
+.todo-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list li {
+  margin: 10px 0;
+}
+
+.completed {
+  text-decoration: line-through;
+}
