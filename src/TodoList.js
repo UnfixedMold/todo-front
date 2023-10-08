@@ -45,13 +45,15 @@ function TodoList() {
 
     return (
         <div className="todo-list">
-            <input
-                type="text"
-                value={newTodo}
-                onChange={e => setNewTodo(e.target.value)}
-                placeholder="New todo..."
-            />
-            <button onClick={addTodo}>Add</button>
+            <div className='todo-list-input'>
+                <input
+                    type="text"
+                    value={newTodo}
+                    onChange={e => setNewTodo(e.target.value)}
+                    placeholder="New todo..."
+                />
+                <button className='todo-list-input-button' onClick={addTodo}>Add</button>
+            </div>
             <ul>
                 {todos.map(todo => (
                     <li key={todo._id} className="todo-item">
@@ -64,9 +66,9 @@ function TodoList() {
                             />
                             <span className={todo.is_checked ? 'completed' : ''}>{todo.name}</span>
                         </div>
-                        <button className="delete-button" onClick={() => deleteTodo(todo._id)}>
-                            <FontAwesomeIcon icon={faTrash} size='xs'/>
-                        </button>
+                        <div className="delete-button" onClick={() => deleteTodo(todo._id)}>
+                            <FontAwesomeIcon icon={faTrash} size='xs' />
+                        </div>
                     </li>
                 ))}
             </ul>
