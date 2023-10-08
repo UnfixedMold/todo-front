@@ -6,7 +6,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 
 
-const API_URL = 'http://localhost:3001/todos';
+const API_URL = 'https://henrikas-todo-backend-74f0ca48359c.herokuapp.com/todos';
 
 function TodoList() {
     const [todos, setTodos] = useState([]);
