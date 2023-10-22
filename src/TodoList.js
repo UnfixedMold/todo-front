@@ -6,7 +6,8 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 
 
-const API_URL = 'https://henrikas-todo-backend-74f0ca48359c.herokuapp.com/todos';
+// const API_URL = 'https://henrikas-todo-backend-74f0ca48359c.herokuapp.com/todos';
+const API_URL = 'https://effulgent-strudel-721c73.netlify.app/.netlify/functions/api/todos'
 
 function TodoList() {
     const [todos, setTodos] = useState([]);
